@@ -3,10 +3,8 @@
   "title": "Microfox Slack OAuth",
   "description": "TypeScript package simplifying Slack OAuth 2.0, providing methods for authorization URL generation, token exchange, validation, and revocation.",
   "path": "packages/slack-oauth",
-  "dependencies": [
-    "zod"
-  ],
-  "status": "stable",
+  "dependencies": ["zod"],
+  "status": "oauthConnector",
   "authEndpoint": "/connect/slack",
   "oauth2Scopes": [
     "chat:write",
@@ -116,33 +114,25 @@
   "keysInfo": [
     {
       "key": "SLACK_CLIENT_ID",
-      "constructors": [
-        "SlackOAuthSdk"
-      ],
+      "constructors": ["SlackOAuthSdk"],
       "description": "Your Slack app's Client ID.",
       "required": true
     },
     {
       "key": "SLACK_CLIENT_SECRET",
-      "constructors": [
-        "SlackOAuthSdk"
-      ],
+      "constructors": ["SlackOAuthSdk"],
       "description": "Your Slack app's Client Secret.",
       "required": true
     },
     {
       "key": "SLACK_REDIRECT_URI",
-      "constructors": [
-        "SlackOAuthSdk"
-      ],
+      "constructors": ["SlackOAuthSdk"],
       "description": "The redirect URI you configured for your Slack app.",
       "required": true
     },
     {
       "key": "SCOPES",
-      "constructors": [
-        "SlackOAuthSdk"
-      ],
+      "constructors": ["SlackOAuthSdk"],
       "description": "The scopes for your Slack app.",
       "required": true,
       "defaultValue": [
@@ -193,10 +183,5 @@
   "keyInstructions": {
     "link": "https://api.slack.com/authentication/oauth-v2"
   },
-  "devDependencies": [
-    "@microfox/tsconfig",
-    "@types/node",
-    "tsup",
-    "typescript"
-  ]
+  "devDependencies": ["@microfox/tsconfig", "@types/node", "tsup", "typescript"]
 }
