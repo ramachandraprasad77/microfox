@@ -11,6 +11,7 @@
     "puppeteer-core",
     "typed-query-selector"
   ],
+  "addedDeps": [""],
   "status": "external",
   "authEndpoint": "",
   "documentation": "https://www.npmjs.com/package/puppeteer",

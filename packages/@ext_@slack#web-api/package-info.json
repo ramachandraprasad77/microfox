@@ -73,9 +73,9 @@
       "requiredKeys": [],
       "internalKeys": [
         {
-          "key": "SLACK_ACCESS_TOKEN",
-          "displayName": "Slack Access Token",
-          "description": "The access token for authenticating with the Slack API."
+          "key": "SLACK_BOT_TOKEN",
+          "displayName": "Slack Bot Token",
+          "description": "The bot token for authenticating with the Slack API."
         }
       ],
       "botConfig": [

@@ -59,6 +59,9 @@
       "required": true
     }
   ],
+  "keyInstructions": {
+    "link": "https://www.notion.so/profile/integrations"
+  },
   "extraInfo": [
     "Use the `Client` constructor to create a new Notion client.",
     "The SDK supports all Notion API endpoints including pages, databases, blocks, and users.",
