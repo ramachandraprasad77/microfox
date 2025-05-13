@@ -1,0 +1,85 @@
+{
+  "sdkMetadata": {
+    "apiName": "Brave",
+    "packageName": "@microfox/brave",
+    "title": "Brave SDK",
+    "description": "TypeScript SDK for Brave APIs.",
+    "keywords": [
+      "brave",
+      "browser",
+      "sdk",
+      "typescript",
+      "microfox"
+    ],
+    "authType": "auto",
+    "authSdk": "",
+    "inputArgs": {
+      "query": "Brave",
+      "url": "https://api-dashboard.search.brave.com/app/documentation",
+      "isBaseUrl": true
+    }
+  },
+  "allLinks": [
+    "https://api-dashboard.search.brave.com/app/dashboard",
+    "https://api-dashboard.search.brave.com/app/documentation",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search/get-started",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search/query",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search/request-headers",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search/response-headers",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search/responses",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search/codes",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search/api-changelog",
+    "https://api-dashboard.search.brave.com/app/documentation/summarizer-search",
+    "https://api-dashboard.search.brave.com/app/documentation/image-search",
+    "https://api-dashboard.search.brave.com/app/documentation/video-search",
+    "https://api-dashboard.search.brave.com/app/documentation/news-search",
+    "https://api-dashboard.search.brave.com/app/documentation/suggest",
+    "https://api-dashboard.search.brave.com/app/documentation/spellcheck",
+    "https://api-dashboard.search.brave.com/app/documentation/general",
+    "https://api-dashboard.search.brave.com/login",
+    "https://api-dashboard.search.brave.com/register",
+    "https://api-dashboard.search.brave.com/app/keys",
+    "https://api-dashboard.search.brave.com/app/subscriptions/subscribe?tab=normal"
+  ],
+  "filteredLinks": [
+    "https://api-dashboard.search.brave.com/app/documentation",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search/get-started",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search/query",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search/request-headers",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search/response-headers",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search/responses",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search/codes",
+    "https://api-dashboard.search.brave.com/app/documentation/web-search/api-changelog",
+    "https://api-dashboard.search.brave.com/app/documentation/summarizer-search",
+    "https://api-dashboard.search.brave.com/app/documentation/image-search",
+    "https://api-dashboard.search.brave.com/app/documentation/video-search",
+    "https://api-dashboard.search.brave.com/app/documentation/news-search",
+    "https://api-dashboard.search.brave.com/app/documentation/suggest",
+    "https://api-dashboard.search.brave.com/app/documentation/spellcheck",
+    "https://api-dashboard.search.brave.com/app/documentation/general"
+  ],
+  "linkAnalysis": {
+    "documentationLinks": [
+      "https://api-dashboard.search.brave.com/app/documentation",
+      "https://api-dashboard.search.brave.com/app/documentation/web-search",
+      "https://api-dashboard.search.brave.com/app/documentation/web-search/get-started",
+      "https://api-dashboard.search.brave.com/app/documentation/web-search/query",
+      "https://api-dashboard.search.brave.com/app/documentation/web-search/request-headers",
+      "https://api-dashboard.search.brave.com/app/documentation/web-search/response-headers",
+      "https://api-dashboard.search.brave.com/app/documentation/web-search/responses",
+      "https://api-dashboard.search.brave.com/app/documentation/web-search/codes",
+      "https://api-dashboard.search.brave.com/app/documentation/web-search/api-changelog",
+      "https://api-dashboard.search.brave.com/app/documentation/summarizer-search",
+      "https://api-dashboard.search.brave.com/app/documentation/image-search",
+      "https://api-dashboard.search.brave.com/app/documentation/video-search",
+      "https://api-dashboard.search.brave.com/app/documentation/news-search",
+      "https://api-dashboard.search.brave.com/app/documentation/suggest",
+      "https://api-dashboard.search.brave.com/app/documentation/spellcheck"
+    ],
+    "reason": "These links provide comprehensive documentation for various aspects of the Brave Search API, including general information, web search, different search types (summarizer, image, video, news), suggestions, and spellcheck.  They are likely to contain details on authentication, endpoints, responses, and other necessary information for SDK creation.",
+    "setupInstructionsLink": "https://api-dashboard.search.brave.com/app/documentation/web-search/get-started"
+  },
+  "linksUpdatedAt": "2025-05-13T06:44:47.838Z"
+}

@@ -1,0 +1,5 @@
+{
+  "url": "https://api-dashboard.search.brave.com/app/documentation/web-search/api-changelog",
+  "content": "Documentation\nWeb Search\nGet Started\nQuery Parameters\nRequest Headers\nResponse Headers\nResponse Objects\nCodes\nAPI Changelog\nSummarizer Search\nImage Search\nVideo Search\nNews Search\nSuggest\nSpellcheck\nGeneral\nLogin\nRegister\nWeb Search API - Changelog\n\nThis changelog outlines all significant changes to the Brave Web Search API in chronological order.\n\n2023-01-01\nAdd Brave Web Search API resource.\n2023-04-14\nChange SearchResult restaurant property to location.\n2023-10-11\nAdd spellcheck flag.\nLocal Search API - Changelog\n\nThis changelog outlines all significant changes to the Brave Local Search API in chronological order.\n\n2024-06-11\nAdd Brave Local Search API resource.",
+  "updatedAt": "2025-05-13T06:45:45.635Z"
+}
