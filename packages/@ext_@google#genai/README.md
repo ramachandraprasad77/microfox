@@ -33,9 +33,9 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const client = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
 
 async function main() {
-  const response = await client.models.generateContent({
+  const response = await client.models.generate_content({
     model: 'gemini-2.0-flash-001',
-    contents: 'Why is the sky blue?',
+    contents: ['Why is the sky blue?'],
   });
   console.log(response.text);
 }
@@ -70,70 +70,6 @@ The submodules bundle together related API methods:
 - [`client.live`](https://googleapis.github.io/js-genai/main/classes/live.Live.html):
   Start a `live` session for real time interaction, allows text + audio + video
   input, and text or audio output.
-
-### Function Calling
-
-To let Gemini to interact with external systems, you can provide provide
-`functionDeclaration` objects as `tools`. To use these tools it's a 4 step
-
-1. **Declare the function name, description, and parameters**
-2. **Call `generateContent` with function calling enabled**
-3. **Use the returned `FunctionCall` parameters to call your actual function**
-4. **Send the result back to the model (with history, easier in `ai.chat`)
-   as a `FunctionResponse`**
-
-```typescript
-import {
-  GoogleGenAI,
-  FunctionCallingConfigMode,
-  FunctionDeclaration,
-  Type,
-} from '@google/genai';
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-
-async function main() {
-  const controlLightDeclaration: FunctionDeclaration = {
-    name: 'controlLight',
-    parameters: {
-      type: Type.OBJECT,
-      description: 'Set the brightness and color temperature of a room light.',
-      properties: {
-        brightness: {
-          type: Type.NUMBER,
-          description:
-            'Light level from 0 to 100. Zero is off and 100 is full brightness.',
-        },
-        colorTemperature: {
-          type: Type.STRING,
-          description:
-            'Color temperature of the light fixture which can be `daylight`, `cool`, or `warm`.',
-        },
-      },
-      required: ['brightness', 'colorTemperature'],
-    },
-  };
-
-  const client = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
-  const response = await client.models.generateContent({
-    model: 'gemini-2.0-flash-001',
-    contents: 'Dim the lights so the room feels cozy and warm.',
-    config: {
-      toolConfig: {
-        functionCallingConfig: {
-          // Force it to call any function
-          mode: FunctionCallingConfigMode.ANY,
-          allowedFunctionNames: ['controlLight'],
-        },
-      },
-      tools: [{ functionDeclarations: [controlLightDeclaration] }],
-    },
-  });
-
-  console.log(response.functionCalls);
-}
-
-main();
-```
 
 ### Models
 
