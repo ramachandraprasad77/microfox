@@ -1,5 +1,11 @@
 # @microfox/brave
 
+## 1.0.1
+
+### Patch Changes
+
+- cdf3963: Changes from PR #232: brave
+
 ## 1.1.0
 
 ### Minor Changes
