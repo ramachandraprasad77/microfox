@@ -13,84 +13,181 @@
     "description": "The full README for the @google/genai",
     "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/README.md",
     "functionalities": [
+      "api_key",
+      "audio",
+      "available_regions",
+      "caching",
       "client_GoogleGenAIOptions_html",
       "client_GoogleGenAI_html",
+      "code_execution",
+      "docs",
+      "document_processing",
+      "embeddings",
       "environment-variables",
+      "files",
+      "function_calling",
+      "grounding",
+      "image_generation",
+      "image_understanding",
       "index_html",
-      "modules_html"
+      "libraries",
+      "live",
+      "long_context",
+      "model_tuning",
+      "models",
+      "modules_html",
+      "oauth",
+      "prompting_strategies",
+      "quickstart",
+      "structured_output",
+      "text_generation",
+      "thinking",
+      "usage_policies",
+      "video_understanding"
     ],
     "all_readmes": [
       {
-        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/client_GoogleGenAIOptions_html.md",
+        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/audio.md",
         "type": "functionality",
         "extension": "md",
-        "functionality": "client_GoogleGenAIOptions_html",
-        "description": "The full README for the @google/genai client_GoogleGenAIOptions_html functionality"
+        "functionality": "audio",
+        "description": "The full README for the @google/genai audio functionality"
       },
       {
-        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/client_GoogleGenAI_html.md",
+        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/caching.md",
         "type": "functionality",
         "extension": "md",
-        "functionality": "client_GoogleGenAI_html",
+        "functionality": "caching",
+        "description": "The full README for the @google/genai caching functionality"
+      },
+      {
+        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/client_GoogleGenAI.md",
+        "type": "functionality",
+        "extension": "md",
+        "functionality": "client_GoogleGenAI",
         "description": "The full README for the @google/genai client_GoogleGenAI_html functionality"
       },
       {
-        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/environment-variables.md",
+        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/code_execution.md",
         "type": "functionality",
         "extension": "md",
-        "functionality": "environment-variables",
-        "description": "The full README for the @google/genai environment-variables functionality"
+        "functionality": "code_execution",
+        "description": "The full README for the @google/genai code_execution functionality"
       },
       {
-        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/index_html.md",
+        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/embeddings.md",
         "type": "functionality",
         "extension": "md",
-        "functionality": "index_html",
-        "description": "The full README for the @google/genai index_html functionality"
+        "functionality": "embeddings",
+        "description": "The full README for the @google/genai embeddings functionality"
       },
       {
-        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/modules_html.md",
+        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/files.md",
         "type": "functionality",
         "extension": "md",
-        "functionality": "modules_html",
-        "description": "The full README for the @google/genai modules_html functionality"
+        "functionality": "files",
+        "description": "The full README for the @google/genai files functionality"
+      },
+      {
+        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/function_calling.md",
+        "type": "functionality",
+        "extension": "md",
+        "functionality": "function_calling",
+        "description": "The full README for the @google/genai function_calling functionality"
+      },
+      {
+        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/image_generation.md",
+        "type": "functionality",
+        "extension": "md",
+        "functionality": "image_generation",
+        "description": "The full README for the @google/genai image_generation functionality"
+      },
+      {
+        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/image_understanding.md",
+        "type": "functionality",
+        "extension": "md",
+        "functionality": "image_understanding",
+        "description": "The full README for the @google/genai image_understanding functionality"
+      },
+      {
+        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/models.md",
+        "type": "functionality",
+        "extension": "md",
+        "functionality": "models",
+        "description": "The full README for the @google/genai models functionality"
+      },
+      {
+        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/structured_output.md",
+        "type": "functionality",
+        "extension": "md",
+        "functionality": "structured_output",
+        "description": "The full README for the @google/genai structured_output functionality"
+      },
+      {
+        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/text_generation.md",
+        "type": "functionality",
+        "extension": "md",
+        "functionality": "text_generation",
+        "description": "The full README for the @google/genai text_generation functionality"
+      },
+      {
+        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/thinking.md",
+        "type": "functionality",
+        "extension": "md",
+        "functionality": "thinking",
+        "description": "The full README for the @google/genai thinking functionality"
+      },
+      {
+        "path": "https://github.com/microfox-ai/microfox/blob/main/packages/@ext_@google#genai/docs/video_understanding.md",
+        "type": "functionality",
+        "extension": "md",
+        "functionality": "video_understanding",
+        "description": "The full README for the @google/genai video_understanding functionality"
       }
     ]
   },
   "constructors": [
     {
-      "name": "constructor",
+      "name": "GoogleGenAI",
       "description": "Create a new @google/genai client through which you can interact with the API",
-      "auth": "apikey",
-      "apiType": "api_key",
+      "auth": "none",
       "requiredKeys": [
         {
           "key": "GEMINI_API_KEY",
           "displayName": "Gemini API Key",
-          "description": "The API key for the Gemini Developer API.",
+          "description": "The API key for the Gemini API.",
           "required": true
         }
       ],
       "internalKeys": [],
       "functionalities": [
-        "client_GoogleGenAIOptions_html",
-        "client_GoogleGenAI_html",
-        "environment-variables",
-        "index_html",
-        "modules_html"
+        "audio",
+        "caching",
+        "client_GoogleGenAIOptions",
+        "code_execution",
+        "embeddings",
+        "files",
+        "function_calling",
+        "image_generation",
+        "image_understanding",
+        "models",
+        "structured_output",
+        "text_generation",
+        "thinking",
+        "video_understanding"
       ]
     }
   ],
   "keysInfo": [
     {
       "key": "GEMINI_API_KEY",
-      "constructors": ["constructor"],
-      "description": "The API key for the Gemini Developer API.",
+      "constructors": ["GoogleGenAI"],
+      "description": "The API key for the Gemini API.",
       "required": true
     }
   ],
   "extraInfo": [],
   "keyInstructions": {
-    "link": "https://googleapis.github.io/js-genai/"
+    "link": "https://ai.google.dev/gemini-api/docs/quickstart"
   }
 }
