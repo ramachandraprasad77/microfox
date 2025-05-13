@@ -1,1 +1,2 @@
-export * from './sdk';
+export { createBraveSDK } from './BraveSdk';
+export * from './types';

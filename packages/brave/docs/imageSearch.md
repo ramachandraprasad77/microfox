@@ -3,35 +3,32 @@
 Performs an image search using the Brave Search API.
 
 **Purpose:**
-Retrieves image search results for a given query and optional parameters.
+This function allows you to search for images using the Brave Search API.
 
 **Parameters:**
 
-- `params`: object<ImageSearchParams> - Required. Image search parameters.
-  - `q`: string - Required. The search query (maximum 400 characters).
-  - `country`: string - Optional. Two-letter country code (e.g., "US").
-  - `search_lang`: string - Optional. Language code (e.g., "en", "es"). Minimum 2 characters.
-  - `count`: number - Optional. Number of results to return (integer between 1 and 100). Defaults to 10.
-  - `safesearch`: enum<SafeSearchOption> - Optional. SafeSearch option. Possible values: "off", "moderate", "strict".
-  - `spellcheck`: boolean - Optional. Whether to enable spellcheck.
+* `params` (ImageSearchParams, required): An object containing the search parameters.  This is the same as `WebSearchParams` but without the `summary` and `extra_snippets` properties.
+    * `q` (string, required): The search query (max 400 characters, 50 words).
+    * `country` (string, optional): 2-letter country code.
+    * `search_lang` (string, optional): Search language.
+    * `ui_lang` (string, optional): UI language.
+    * `count` (number, optional): Number of results (max 20).
+    * `offset` (number, optional): Offset for pagination (max 9).
+    * `safesearch` (enum, optional): Safe search level ('off', 'moderate', 'strict').
+    * `freshness` (enum | string, optional): Freshness of results ('pd', 'pw', 'pm', 'py' or a custom string).
+    * `text_decorations` (boolean, optional): Include decoration markers.
+    * `spellcheck` (boolean, optional): Enable spellchecking.
+    * `result_filter` (string, optional): Comma-separated list of result types.
+    * `goggles` (array<string>, optional): Goggle definitions.
+    * `units` (enum, optional): Units for measurements ('metric', 'imperial').
 
 **Return Value:**
 
-- `Promise<any>` - A promise that resolves to the image search results.
+* `Promise<ImageSearchApiResponse>`: A promise that resolves to the image search response.
 
 **Examples:**
 
 ```typescript
-// Example 1: Minimal usage
-const results = await braveSDK.imageSearch({ q: 'cat' });
-
-// Example 2: Full usage
-const results = await braveSDK.imageSearch({
-  q: 'dogs',
-  country: 'UK',
-  search_lang: 'fr',
-  count: 50,
-  safesearch: 'strict',
-  spellcheck: false,
-});
+// Example: Performing an image search
+const results = await braveSDK.imageSearch({ q: 'cats' });
 ```

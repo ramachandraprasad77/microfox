@@ -3,41 +3,32 @@
 Performs a video search using the Brave Search API.
 
 **Purpose:**
-Retrieves video search results for a given query and optional parameters.
+This function allows you to search for videos using the Brave Search API.
 
 **Parameters:**
 
-- `params`: object<VideoSearchParams> - Required. Video search parameters.
-  - `q`: string - Required. The search query (maximum 400 characters).
-  - `country`: string - Optional. Two-letter country code (e.g., "US").
-  - `search_lang`: string - Optional. Language code (e.g., "en", "es"). Minimum 2 characters.
-  - `ui_lang`: string - Optional. UI language code (e.g., "en-US"). Must match the regex /^[a-z]{2}-[A-Z]{2}$/.
-  - `count`: number - Optional. Number of results to return (integer between 1 and 50). Defaults to 10.
-  - `offset`: number - Optional. Offset for pagination (integer between 0 and 9).
-  - `spellcheck`: boolean - Optional. Whether to enable spellcheck.
-  - `safesearch`: enum<SafeSearchOption> - Optional. SafeSearch option. Possible values: "off", "moderate", "strict".
-  - `freshness`: enum<FreshnessOption> | string - Optional. Freshness option. Possible values: "pd", "pw", "pm", "py", or a date range in the format "YYYY-MM-DDtoYYYY-MM-DD".
+* `params` (VideoSearchParams, required): An object containing the search parameters.  This is the same as `WebSearchParams` but without the `summary` and `extra_snippets` properties.
+    * `q` (string, required): The search query (max 400 characters, 50 words).
+    * `country` (string, optional): 2-letter country code.
+    * `search_lang` (string, optional): Search language.
+    * `ui_lang` (string, optional): UI language.
+    * `count` (number, optional): Number of results (max 20).
+    * `offset` (number, optional): Offset for pagination (max 9).
+    * `safesearch` (enum, optional): Safe search level ('off', 'moderate', 'strict').
+    * `freshness` (enum | string, optional): Freshness of results ('pd', 'pw', 'pm', 'py' or a custom string).
+    * `text_decorations` (boolean, optional): Include decoration markers.
+    * `spellcheck` (boolean, optional): Enable spellchecking.
+    * `result_filter` (string, optional): Comma-separated list of result types.
+    * `goggles` (array<string>, optional): Goggle definitions.
+    * `units` (enum, optional): Units for measurements ('metric', 'imperial').
 
 **Return Value:**
 
-- `Promise<any>` - A promise that resolves to the video search results.
+* `Promise<VideoSearchApiResponse>`: A promise that resolves to the video search response.
 
 **Examples:**
 
 ```typescript
-// Example 1: Minimal usage
-const results = await braveSDK.videoSearch({ q: 'music' });
-
-// Example 2: Full usage
-const results = await braveSDK.videoSearch({
-  q: 'coding',
-  country: 'CA',
-  search_lang: 'de',
-  ui_lang: 'de-DE',
-  count: 25,
-  offset: 5,
-  spellcheck: true,
-  safesearch: 'off',
-  freshness: 'pm',
-});
+// Example: Performing a video search
+const results = await braveSDK.videoSearch({ q: 'dogs' });
 ```

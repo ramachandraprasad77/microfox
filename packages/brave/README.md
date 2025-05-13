@@ -1,6 +1,6 @@
-# Brave TypeScript SDK
+# Brave SDK
 
-TypeScript SDK for the Brave search API, providing functions for web search, summarizer search, image search, video search, news search, suggestions, and spellcheck.
+TypeScript SDK for Brave APIs.
 
 ## Installation
 
@@ -10,23 +10,24 @@ npm install @microfox/brave
 
 ## Environment Variables
 
-The following environment variables are used by this SDK:
+To use this package, you need to set the following environment variables:
 
-- `BRAVE_API_KEY`: Your Brave Search API key. You can obtain this key from the Brave Search API developer portal. (Required)
-
-## Additional Information
-
-Use the `createBraveSDK` constructor to create a new client.
+- `BRAVE_API_KEY`: Your Brave Search API key.  Obtain this by subscribing to a plan (including the free plan) at https://brave.com/search/api/. ** (Required)**
 
 ## API Reference
 
-For detailed documentation on the constructor and all available functions, see:
+For detailed documentation on the constructor and all available functions, please refer to the following files:
 
-- [createBraveSDK](./docs/createBraveSDK.md)
+- [**BraveSDK** (Constructor)](./docs/BraveSDK.md): Initializes the client.
+- [request](./docs/request.md)
 - [webSearch](./docs/webSearch.md)
+- [localPoiSearch](./docs/localPoiSearch.md)
+- [localDescriptionsSearch](./docs/localDescriptionsSearch.md)
+- [summarizerSearch](./docs/summarizerSearch.md)
 - [imageSearch](./docs/imageSearch.md)
 - [videoSearch](./docs/videoSearch.md)
 - [newsSearch](./docs/newsSearch.md)
-- [getSuggestions](./docs/getSuggestions.md)
-- [spellcheck](./docs/spellcheck.md)
-- [summarizerSearch](./docs/summarizerSearch.md)
+- [suggestSearch](./docs/suggestSearch.md)
+- [spellcheckSearch](./docs/spellcheckSearch.md)
+- [createBraveSDK](./docs/createBraveSDK.md)
+

@@ -1,7 +1,7 @@
 {
   "name": "@microfox/brave",
-  "version": "1.1.0",
-  "description": "TypeScript SDK for the Brave search API, providing functions for web search, summarizer search, image search, video search, news search, suggestions, and spellcheck.",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for Brave APIs.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -23,14 +23,12 @@
       "require": "./dist/index.js"
     }
   },
-  "dependencies": {
-    "zod": "^3.24.3"
-  },
   "devDependencies": {
     "@microfox/tsconfig": "*",
     "@types/node": "^18",
     "tsup": "^8",
-    "typescript": "5.6.3"
+    "typescript": "5.6.3",
+    "zod": "3.24.4"
   },
   "publishConfig": {
     "access": "public"
@@ -48,9 +46,9 @@
   },
   "keywords": [
     "brave",
-    "search",
-    "typescript",
+    "browser",
     "sdk",
+    "typescript",
     "microfox"
   ]
 }

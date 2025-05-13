@@ -3,43 +3,34 @@
 Performs a web search using the Brave Search API.
 
 **Purpose:**
-Retrieves web search results for a given query and optional parameters.
+This function allows you to perform web searches and retrieve results from the Brave Search API.
 
 **Parameters:**
 
-- `params`: object<WebSearchParams> - Required. Web search parameters.
-  - `q`: string - Required. The search query (maximum 400 characters).
-  - `country`: string - Optional. Two-letter country code (e.g., "US").
-  - `search_lang`: string - Optional. Language code (e.g., "en", "es"). Minimum 2 characters.
-  - `ui_lang`: string - Optional. UI language code (e.g., "en-US"). Must match the regex /^[a-z]{2}-[A-Z]{2}$/.
-  - `count`: number - Optional. Number of results to return (integer between 1 and 20). Defaults to 10.
-  - `offset`: number - Optional. Offset for pagination (integer between 0 and 9).
-  - `safesearch`: enum<SafeSearchOption> - Optional. SafeSearch option. Possible values: "off", "moderate", "strict".
-  - `freshness`: enum<FreshnessOption> | string - Optional. Freshness option. Possible values: "pd", "pw", "pm", "py", or a date range in the format "YYYY-MM-DDtoYYYY-MM-DD".
-  - `text_decorations`: boolean - Optional. Whether to include text decorations.
-  - `spellcheck`: boolean - Optional. Whether to enable spellcheck.
+* `params` (WebSearchParams, required): An object containing the search parameters.
+    * `q` (string, required): The search query (max 400 characters, 50 words).
+    * `country` (string, optional): 2-letter country code.
+    * `search_lang` (string, optional): Search language.
+    * `ui_lang` (string, optional): UI language.
+    * `count` (number, optional): Number of results (max 20).
+    * `offset` (number, optional): Offset for pagination (max 9).
+    * `safesearch` (enum, optional): Safe search level ('off', 'moderate', 'strict').
+    * `freshness` (enum | string, optional): Freshness of results ('pd', 'pw', 'pm', 'py' or a custom string).
+    * `text_decorations` (boolean, optional): Include decoration markers.
+    * `spellcheck` (boolean, optional): Enable spellchecking.
+    * `result_filter` (string, optional): Comma-separated list of result types.
+    * `goggles` (array<string>, optional): Goggle definitions.
+    * `units` (enum, optional): Units for measurements ('metric', 'imperial').
+    * `extra_snippets` (boolean, optional): Include extra snippets.
+    * `summary` (boolean, optional): Enable summary key generation.
 
 **Return Value:**
 
-- `Promise<any>` - A promise that resolves to the web search results.
+* `Promise<WebSearchApiResponse>`: A promise that resolves to the web search response.
 
 **Examples:**
 
 ```typescript
-// Example 1: Minimal usage
-const results = await braveSDK.webSearch({ q: 'test' });
-
-// Example 2: Full usage
-const results = await braveSDK.webSearch({
-  q: 'technology',
-  country: 'US',
-  search_lang: 'en',
-  ui_lang: 'en-US',
-  count: 20,
-  offset: 0,
-  safesearch: 'moderate',
-  freshness: 'pw',
-  text_decorations: true,
-  spellcheck: true,
-});
+// Example: Performing a web search
+const results = await braveSDK.webSearch({ q: 'TypeScript' });
 ```
