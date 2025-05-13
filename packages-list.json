@@ -1,6 +1,7 @@
 {
   "externalPackages": [
     "packages/@ext_@google#genai",
+    "packages/@ext_@hyperbrowser#sdk",
     "packages/@ext_@notionhq#client",
     "packages/@ext_@slack#web-api",
     "packages/@ext_ai",
@@ -48,6 +49,6 @@
   "internalPackages": [
     "packages/rest-sdk"
   ],
-  "total": 37,
-  "generatedAt": "2025-05-13T06:57:08.034Z"
+  "total": 38,
+  "generatedAt": "2025-05-13T17:58:59.752Z"
 }
