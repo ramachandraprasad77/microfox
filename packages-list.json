@@ -8,6 +8,7 @@
   ],
   "semiStablePackages": [
     "packages/amazon-rekognition-face-detection",
+    "packages/brave",
     "packages/coingecko-sdk",
     "packages/discord",
     "packages/drive",
@@ -24,10 +25,8 @@
   ],
   "stablePackages": [
     "packages/aws-ses",
-    "packages/brave",
     "packages/google-sheets",
     "packages/linkedin-share",
-    "packages/slack-oauth",
     "packages/slack-web-tiny",
     "packages/whatsapp-business"
   ],
@@ -43,14 +42,12 @@
     "packages/instagram-business-oauth",
     "packages/instagram-fb-business-oauth",
     "packages/linkedin-oauth",
-    "packages/reddit-oauth"
-  ],
-  "unknownPackages": [
-    "packages/google-sdk"
+    "packages/reddit-oauth",
+    "packages/slack-oauth"
   ],
   "internalPackages": [
     "packages/rest-sdk"
   ],
-  "total": 38,
-  "generatedAt": "2025-05-12T16:21:06.366Z"
+  "total": 37,
+  "generatedAt": "2025-05-13T06:57:08.034Z"
 }
