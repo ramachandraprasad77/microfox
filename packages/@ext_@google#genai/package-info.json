@@ -150,7 +150,8 @@
     {
       "name": "GoogleGenAI",
       "description": "Create a new @google/genai client through which you can interact with the API",
-      "auth": "none",
+      "auth": "apikey",
+      "apiType": "api_key",
       "requiredKeys": [
         {
           "key": "GEMINI_API_KEY",
