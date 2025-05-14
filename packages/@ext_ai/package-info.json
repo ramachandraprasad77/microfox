@@ -266,7 +266,7 @@
   },
   "constructors": [
     {
-      "name": "constructor",
+      "name": "generateText",
       "description": "Create a new ai client through which you can interact with the API",
       "auth": "apikey",
       "apiType": "api_key",
@@ -316,7 +316,7 @@
   "keysInfo": [
     {
       "key": "OPENAI_API_KEY",
-      "constructors": ["constructor"],
+      "constructors": ["generateText"],
       "description": "The API key for OpenAI.",
       "required": true
     }
