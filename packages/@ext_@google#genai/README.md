@@ -1,18 +1,3 @@
-# Google Gen AI SDK for TypeScript and JavaScript
-
-[![NPM Downloads](https://img.shields.io/npm/dw/%40google%2Fgenai)](https://www.npmjs.com/package/@google/genai)
-[![Node Current](https://img.shields.io/node/v/%40google%2Fgenai)](https://www.npmjs.com/package/@google/genai)
-
----
-
-**Documentation:** https://googleapis.github.io/js-genai/
-
----
-
-## Prerequisites
-
-- Node.js version 18 or later
-
 ## Installation
 
 To install the SDK, run the following command:
@@ -42,34 +27,6 @@ async function main() {
 
 main();
 ```
-
-## Initialization
-
-The Google Gen AI SDK provides support for both the
-[Google AI Studio](https://ai.google.dev/gemini-api/docs) and
-[Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/overview)
-implementations of the Gemini API.
-
-## GoogleGenAI overview
-
-All API features are accessed through an instance of the `GoogleGenAI` classes.
-The submodules bundle together related API methods:
-
-- [`client.models`](https://googleapis.github.io/js-genai/main/classes/models.Models.html):
-  Use `models` to query models (`generateContent`, `generateImages`, ...), or
-  examine their metadata.
-- [`client.caches`](https://googleapis.github.io/js-genai/main/classes/caches.Caches.html):
-  Create and manage `caches` to reduce costs when repeatedly using the same
-  large prompt prefix.
-- [`client.chats`](https://googleapis.github.io/js-genai/main/classes/chats.Chats.html):
-  Create local stateful `chat` objects to simplify multi turn interactions.
-- [`client.files`](https://googleapis.github.io/js-genai/main/classes/files.Files.html):
-  Upload `files` to the API and reference them in your prompts.
-  This reduces bandwidth if you use a file many times, and handles files too
-  large to fit inline with your prompt.
-- [`client.live`](https://googleapis.github.io/js-genai/main/classes/live.Live.html):
-  Start a `live` session for real time interaction, allows text + audio + video
-  input, and text or audio output.
 
 ### Models
 
