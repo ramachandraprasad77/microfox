@@ -13,9 +13,9 @@ $$;
 -- Main embeddings table
 CREATE TABLE IF NOT EXISTS api_embeddings (
   id                         UUID             PRIMARY KEY DEFAULT gen_random_uuid(),
-  userId                     TEXT             NOT NULL,
-  botProjectId               TEXT             NULL,
-  originClientRequestId      TEXT             NULL,
+  user_id                    TEXT             NOT NULL,
+  bot_project_id             TEXT             NULL,
+  origin_client_request_id   TEXT             NULL,
   base_url                   TEXT             NOT NULL,
   schema_path                TEXT             NOT NULL,             -- e.g. "/docs.json"
   endpoint_path              TEXT             NOT NULL,             -- e.g. "/api/send-message"
