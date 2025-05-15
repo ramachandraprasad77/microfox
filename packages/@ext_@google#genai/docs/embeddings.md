@@ -1,6 +1,6 @@
 ## Function: `embedContent`
 
-Generates text embeddings for given content. Embeddings are numerical representations of text that capture relationships between inputs, useful for tasks like semantic search, text classification, and clustering.
+Generates embeddings for given content. Embeddings are numerical representations of text that capture relationships between inputs, useful for tasks like semantic search, text classification, and clustering.
 
 **Purpose:**
 To convert text into numerical vectors that represent their semantic meaning, enabling various AI tasks like information retrieval, clustering, and classification.
