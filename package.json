@@ -63,8 +63,20 @@
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.0",
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
     "glob": "^11.0.1",
+    "openai": "^4.98.0",
     "zod": "^3.24.3"
   },
-  "type": "module"
+  "type": "module",
+  "version": "1.0.0",
+  "description": "> Code that writes code that writes code",
+  "main": ".eslintrc.js",
+  "directories": {
+    "example": "examples"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/microfox-ai/microfox#readme"
 }
